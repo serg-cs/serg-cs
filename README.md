@@ -1,1 +1,1 @@
-![GitHub Card](https://githubcard.com/serg-cs.svg?d=AyrM41Bx)
+![GitHub Card](https://githubcard.com/serg-cs.svg?d=AiArUpjx)
