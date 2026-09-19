@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="color-scheme" content="dark" />
+        <meta name="theme-color" content="#2d2a2e" />
+        <meta
+            name="description"
+            content="CV — Sergio Castaño Sánchez, Software Engineering student in Málaga."
+        />
+        <meta name="author" content="Sergio Castaño Sánchez" />
+        <meta property="og:type" content="profile" />
+        <meta property="og:title" content="Sergio Castaño Sánchez — CV" />
+        <meta
+            property="og:description"
+            content="Software Engineering student in Málaga"
+        />
+        <meta
+            property="og:url"
+            content="https://serg-cs.github.io/serg-cs/cv/"
+        />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:locale:alternate" content="es_ES" />
+        <meta property="profile:first_name" content="Sergio" />
+        <meta property="profile:last_name" content="Castaño Sánchez" />
+        <meta property="profile:username" content="serg-cs" />
+        <meta name="twitter:card" content="summary" />
+        <title>Sergio Castaño Sánchez — CV</title>
+        <link
+            rel="canonical"
+            href="https://serg-cs.github.io/serg-cs/cv/"
+        />
+        <link
+            rel="alternate"
+            hreflang="en"
+            href="https://serg-cs.github.io/serg-cs/cv/?lang=en"
+        />
+        <link
+            rel="alternate"
+            hreflang="es"
+            href="https://serg-cs.github.io/serg-cs/cv/?lang=es"
+        />
+        <link
+            rel="alternate"
+            hreflang="x-default"
+            href="https://serg-cs.github.io/serg-cs/cv/"
+        />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Sergio Castaño Sánchez",
+                "alternateName": "serg-cs",
+                "url": "https://serg-cs.github.io/serg-cs/cv/",
+                "email": "sergiocastanosanchez@icloud.com",
+                "jobTitle": "Software Engineering student",
+                "sameAs": ["https://github.com/serg-cs"],
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Málaga",
+                    "addressCountry": "ES"
+                },
+                "affiliation": {
+                    "@type": "CollegeOrUniversity",
+                    "name": "University of Málaga"
+                }
+            }
+        </script>
+        <link
+            rel="icon"
+            href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23221f22'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-family='ui-monospace,monospace' font-size='10' font-weight='700' fill='%23fc9867'%3ESCS%3C/text%3E%3C/svg%3E"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <script>
+            (function () {
+                var langs = { en: 1, es: 1 };
+                var q = new URLSearchParams(location.search).get("lang");
+                var stored = null;
+                try {
+                    stored = localStorage.getItem("cv-lang");
+                } catch (e) {}
+                var nav =
+                    (navigator.languages && navigator.languages[0]) ||
+                    navigator.language ||
+                    "en";
+                var device = String(nav).toLowerCase().indexOf("es") === 0 ? "es" : "en";
+                var lang = langs[q] ? q : langs[stored] ? stored : device;
+                document.documentElement.lang = lang;
+                if (lang !== "en") document.documentElement.classList.add("i18n-pending");
+            })();
+        </script>
+        <noscript>
+            <style>
+                html.i18n-pending [data-i18n] {
+                    visibility: visible;
+                }
+            </style>
+        </noscript>
+    </head>
+    <body>
+        <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+        <div class="wrap">
+            <header>
+                <div class="top-bar">
+                    <nav class="lang" aria-label="Language">
+                        <a href="?lang=es" hreflang="es" lang="es" data-set-lang="es">ES</a>
+                        <span aria-hidden="true">|</span>
+                        <a href="?lang=en" hreflang="en" lang="en" data-set-lang="en">EN</a>
+                    </nav>
+                    <a
+                        class="pdf-btn"
+                        href="cv-en.pdf"
+                        download="Sergio-Castano-Sanchez-CV-en.pdf"
+                        data-i18n="pdf"
+                        >Download PDF</a
+                    >
+                </div>
+                <h1>
+                    Sergio Castaño Sánchez <span class="handle">(serg-cs)</span>
+                </h1>
+                <p class="role" data-i18n="role">
+                    Software Engineering student
+                </p>
+                <p class="meta">
+                    <span data-i18n="location">Málaga, Spain</span>
+                    <span class="sep" aria-hidden="true">·</span>
+                    <a href="https://github.com/serg-cs" rel="me">GitHub</a>
+                    <span class="sep" aria-hidden="true">·</span>
+                    <a href="mailto:sergiocastanosanchez@icloud.com"
+                        >sergiocastanosanchez@icloud.com</a
+                    >
+                </p>
+            </header>
+
+            <main id="main">
+                <section class="about" aria-labelledby="about-h">
+                    <h2 id="about-h" data-i18n="sec.about">// about</h2>
+                    <p data-i18n="about">
+                        Software Engineering student at the University of
+                        Málaga. I am interested in system design and
+                        architecture: understanding how the different parts of a
+                        project work and how they connect.
+                    </p>
+                </section>
+
+                <section class="skills" aria-labelledby="skills-h">
+                    <h2 id="skills-h" data-i18n="sec.skills">// skills</h2>
+
+                    <div class="skill-group">
+                        <h3 data-i18n="skills.languages">Programming languages</h3>
+                        <ul class="chips">
+                            <li class="chip">Rust</li>
+                            <li class="chip">Go</li>
+                            <li class="chip">JavaScript</li>
+                            <li class="chip">TypeScript</li>
+                            <li class="chip">SQL</li>
+                            <li class="chip">HTML/CSS</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3 data-i18n="skills.frameworks">Frameworks & libraries</h3>
+                        <ul class="chips">
+                            <li class="chip">React</li>
+                            <li class="chip">Svelte</li>
+                            <li class="chip">Tauri</li>
+                            <li class="chip">Axum</li>
+                            <li class="chip">Tokio</li>
+                            <li class="chip">HTMX</li>
+                            <li class="chip">gRPC/protobuf</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3 data-i18n="skills.tools">Tools/infra</h3>
+                        <ul class="chips">
+                            <li class="chip">Git</li>
+                            <li class="chip">GitHub Actions</li>
+                            <li class="chip">PostgreSQL</li>
+                            <li class="chip">SQLite</li>
+                            <li class="chip">GitHub Pages</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3 data-i18n="skills.ai">AI tooling</h3>
+                        <ul class="chips">
+                            <li class="chip">LLMs</li>
+                            <li class="chip">Codex</li>
+                            <li class="chip">OpenCode</li>
+                            <li class="chip">Grok Bots</li>
+                            <li class="chip">SKILLS / AGENTS.md</li>
+                            <li class="chip">Ollama</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3 data-i18n="skills.spoken">Spoken</h3>
+                        <ul class="spoken">
+                            <li data-i18n="skills.spanish">Spanish — native</li>
+                            <li data-i18n="skills.english">English — C2 (Cambridge)</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="studies" aria-labelledby="studies-h">
+                    <h2 id="studies-h" data-i18n="sec.studies">// studies</h2>
+                    <div class="studies-block">
+                        <h3 data-i18n="studies.degree">Bachelor's Degree in Software Engineering</h3>
+                        <p class="studies-meta">
+                            <span data-i18n="studies.school">University of Málaga</span>
+                            <span class="sep" aria-hidden="true">·</span>
+                            <span data-i18n="studies.year"
+                                >Currently 3rd year</span
+                            >
+                        </p>
+                        <p
+                            class="electives-label"
+                            data-i18n="studies.electives"
+                        >
+                            Electives
+                        </p>
+                        <ul>
+                            <li>Desarrollo de Software Crítico</li>
+                            <li>Arquitecturas Clusters</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="collab" aria-labelledby="collab-h">
+                    <h2 id="collab-h" data-i18n="sec.collab">
+                        // collaborations
+                    </h2>
+                    <article class="card">
+                        <div class="card-top">
+                            <div class="card-heading">
+                                <h3>cncf/landscape2</h3>
+                                <p class="card-date">
+                                    <time
+                                        datetime="2023"
+                                        data-i18n="landscape.date"
+                                        >2023</time
+                                    >
+                                </p>
+                            </div>
+                            <p class="card-links">
+                                <a
+                                    href="https://github.com/cncf/landscape2/pull/168"
+                                    title="Generate CSV file listing all landscape items"
+                                    data-i18n-title="landscape.pr168"
+                                    >#168</a
+                                >
+                                <a
+                                    href="https://github.com/cncf/landscape2-sites/pull/7"
+                                    title="Add reusable build-and-deploy workflow"
+                                    data-i18n-title="landscape.pr7"
+                                    >#7</a
+                                >
+                                <a
+                                    href="https://github.com/cncf/landscape2-validate-action/pull/1"
+                                    title="Add landscape2 validate action"
+                                    data-i18n-title="landscape.pr1"
+                                    >#1</a
+                                >
+                                <a
+                                    class="more"
+                                    href="https://github.com/search?q=author%3Aserg-cs+org%3Acncf+is%3Apr&amp;type=pullrequests"
+                                    data-i18n="landscape.more"
+                                    >and more</a
+                                >
+                            </p>
+                        </div>
+                        <p class="pitch" data-i18n="landscape.pitch">
+                            Contributions to CNCF Landscape 2, the generator
+                            behind landscape.cncf.io.
+                        </p>
+                        <ul>
+                            <li data-i18n="landscape.b1">
+                                CSV export, TAG metadata, and validation of
+                                landscape data.
+                            </li>
+                            <li data-i18n="landscape.b2">
+                                GitHub Action and reusable workflows to build
+                                and deploy landscape sites.
+                            </li>
+                        </ul>
+                        <ul class="chips">
+                            <li class="chip">Rust</li>
+                            <li class="chip">GitHub Actions</li>
+                            <li class="chip">CNCF</li>
+                        </ul>
+                    </article>
+                </section>
+
+                <section class="projects" aria-labelledby="projects-h">
+                    <h2 id="projects-h" data-i18n="sec.projects">
+                        // projects
+                    </h2>
+                    <div class="projects-list">
+                        <article class="card">
+                            <div class="card-top">
+                                <div class="card-heading">
+                                    <h3>silo</h3>
+                                    <p class="card-date">
+                                        <time datetime="2026-08" data-i18n="silo.date">Aug 2026</time>
+                                    </p>
+                                </div>
+                                <p class="card-links">
+                                    <a href="https://github.com/serg-cs/silo" aria-label="silo on GitHub">GitHub</a>
+                                    <a href="https://serg-cs.github.io/silo/" data-i18n="link.docs">Docs</a>
+                                </p>
+                            </div>
+                            <p class="pitch" data-i18n="silo.pitch">Per-project Linux workspaces on macOS.</p>
+                            <ul>
+                                <li data-i18n="silo.b1">A CLI runs a reusable container per repo so tools and agents share one environment.</li>
+                            </ul>
+                            <ul class="chips">
+                                <li class="chip">Rust</li>
+                                <li class="chip">CLI</li>
+                                <li class="chip">containers</li>
+                            </ul>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-top">
+                                <div class="card-heading">
+                                    <h3>cielo</h3>
+                                    <p class="card-date">
+                                        <time datetime="2026-07" data-i18n="cielo.date">Jul 2026</time>
+                                    </p>
+                                </div>
+                                <p class="card-links">
+                                    <a href="https://github.com/serg-cs/cielo" aria-label="cielo on GitHub">GitHub</a>
+                                    <a href="https://cielo.serg-cs.com" data-i18n="link.live">Live</a>
+                                </p>
+                            </div>
+                            <p class="pitch" data-i18n="cielo.pitch">Installable AEMET weather app, published as static files.</p>
+                            <ul>
+                                <li data-i18n="cielo.b1">A Rust CLI builds the app and the forecast data separately.</li>
+                            </ul>
+                            <ul class="chips">
+                                <li class="chip">Rust</li>
+                                <li class="chip">PWA</li>
+                                <li class="chip">HTML/CSS</li>
+                            </ul>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-top">
+                                <div class="card-heading">
+                                    <h3>grpc-calculator</h3>
+                                    <p class="card-date">
+                                        <time datetime="2026-03" data-i18n="grpc.date">Mar 2026</time>
+                                    </p>
+                                </div>
+                                <p class="card-links">
+                                    <a href="https://github.com/serg-cs/grpc-calculator" aria-label="grpc-calculator on GitHub">GitHub</a>
+                                </p>
+                            </div>
+                            <p class="pitch" data-i18n="grpc.pitch">Calculator split across three services.</p>
+                            <ul>
+                                <li data-i18n="grpc.b1">Svelte UI → Go HTTP → Rust gRPC, with protobuf as the contract.</li>
+                            </ul>
+                            <ul class="chips">
+                                <li class="chip">Svelte</li>
+                                <li class="chip">Go</li>
+                                <li class="chip">Rust</li>
+                                <li class="chip">gRPC</li>
+                                <li class="chip">protobuf</li>
+                            </ul>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-top">
+                                <div class="card-heading">
+                                    <h3>todone</h3>
+                                    <p class="card-date">
+                                        <time datetime="2026-01" data-i18n="todone.date">Jan 2026</time>
+                                    </p>
+                                </div>
+                                <p class="card-links">
+                                    <a href="https://github.com/serg-cs/todone" aria-label="todone on GitHub">GitHub</a>
+                                </p>
+                            </div>
+                            <p class="pitch" data-i18n="todone.pitch">Desktop Kanban that stores tasks on your computer.</p>
+                            <ul>
+                                <li data-i18n="todone.b1">React/TypeScript UI, Rust (Tauri) backend, SQLite — no account.</li>
+                            </ul>
+                            <ul class="chips">
+                                <li class="chip">React</li>
+                                <li class="chip">TypeScript</li>
+                                <li class="chip">Tauri</li>
+                                <li class="chip">Rust</li>
+                                <li class="chip">SQLite</li>
+                            </ul>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-top">
+                                <div class="card-heading">
+                                    <h3>unitowork</h3>
+                                    <p class="card-date">
+                                        <time datetime="2025-06" data-i18n="unitowork.date">Jun 2025</time>
+                                    </p>
+                                </div>
+                                <p class="card-links">
+                                    <a href="https://github.com/serg-cs/unitowork" aria-label="unitowork on GitHub">GitHub</a>
+                                </p>
+                            </div>
+                            <p class="pitch" data-i18n="unitowork.pitch">Job board for students and recent graduates.</p>
+                            <ul>
+                                <li data-i18n="unitowork.b1">Rust (Axum), HTMX and PostgreSQL; listings are reviewed before they go live.</li>
+                            </ul>
+                            <ul class="chips">
+                                <li class="chip">Rust</li>
+                                <li class="chip">Axum</li>
+                                <li class="chip">HTMX</li>
+                                <li class="chip">PostgreSQL</li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>

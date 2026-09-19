@@ -1,0 +1,54 @@
+name: cv-pdf
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - docs/cv/index.html
+      - docs/cv/styles.css
+      - docs/cv/main.js
+      - .github/cv-pdf.mjs
+      - .github/workflows/cv-pdf.yml
+  workflow_dispatch:
+
+concurrency:
+  group: cv-pdf
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  pdf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+
+      - name: Generate PDFs
+        run: |
+          set -euo pipefail
+          python3 -m http.server 8765 --bind 127.0.0.1 --directory "$GITHUB_WORKSPACE/docs" &
+          ready=0
+          for i in $(seq 1 50); do
+            if curl -fsS -o /dev/null http://127.0.0.1:8765/cv/; then ready=1; break; fi
+            sleep 0.1
+          done
+          test "$ready" = 1 || { echo "static server did not start"; exit 1; }
+          node .github/cv-pdf.mjs
+
+      - name: Commit PDFs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/cv/cv-en.pdf docs/cv/cv-es.pdf
+          if git diff --cached --quiet; then
+            echo "PDFs unchanged"
+            exit 0
+          fi
+          git commit -m "Update CV PDFs"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
