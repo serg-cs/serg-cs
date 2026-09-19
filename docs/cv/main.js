@@ -40,24 +40,20 @@ const strings = {
     "landscape.pr7": "Add reusable build-and-deploy workflow",
     "landscape.pr1": "Add landscape2 validate action",
     "sec.projects": "// projects",
-    "silo.pitch": "Per-project Linux workspaces on macOS.",
-    "silo.b1":
-      "A CLI runs a reusable container per repo so tools and agents share one environment.",
+    "silo.pitch":
+      "Each repo gets a stable Linux workspace on macOS so agents and tools share one environment, instead of a disposable container every session. The project stays mounted with explicit persistent state, so the workspace can outlive a single run without leaking tools across projects.",
     "silo.date": "Aug 2026",
-    "cielo.pitch": "Installable AEMET weather app, published as static files.",
-    "cielo.b1": "A Rust CLI builds the app and the forecast data separately.",
+    "cielo.pitch":
+      "An installable weather app that turns AEMET forecasts into static files. App and forecast data are built separately so each can update on its own schedule, and served from an S3-compatible bucket.",
     "cielo.date": "Jul 2026",
-    "grpc.pitch": "Calculator split across three services.",
-    "grpc.b1":
-      "Svelte UI → Go HTTP → Rust gRPC, with protobuf as the contract.",
+    "grpc.pitch":
+      "A calculator built to practice crossing service and language boundaries, not to compute faster. The UI, HTTP gateway, and compute service stay separate, with a typed contract in the middle so each piece can change on its own.",
     "grpc.date": "Mar 2026",
-    "todone.pitch": "Desktop Kanban that stores tasks on your computer.",
-    "todone.b1":
-      "React/TypeScript UI, Rust (Tauri) backend, SQLite — no account.",
+    "todone.pitch":
+      "A local-first desktop Kanban so tasks stay on the machine and never need an account. The UI talks to a native backend with an on-disk database, which keeps the app fast and private without a server.",
     "todone.date": "Jan 2026",
-    "unitowork.pitch": "Job board for students and recent graduates.",
-    "unitowork.b1":
-      "Rust (Axum), HTMX and PostgreSQL; listings are reviewed before they go live.",
+    "unitowork.pitch":
+      "A job board for students and recent graduates, aimed at entry-level listings that do not assume prior experience. The site is server-rendered as one deployable binary, and new postings go through admin review before they are public.",
     "unitowork.date": "Jun 2025",
     "link.docs": "Docs",
     "link.live": "Live",
@@ -100,27 +96,20 @@ const strings = {
     "landscape.pr7": "Añadir un workflow reutilizable de build y deploy",
     "landscape.pr1": "Añadir la action de validación de landscape2",
     "sec.projects": "// proyectos",
-    "silo.pitch": "Workspaces Linux por proyecto en macOS.",
-    "silo.b1":
-      "Una CLI lanza un contenedor reutilizable por repo para que herramientas y agentes compartan el entorno.",
+    "silo.pitch":
+      "Cada repo tiene un workspace Linux estable en macOS para que agentes y herramientas compartan un entorno, en lugar de un contenedor desechable en cada sesión. El proyecto permanece montado y el estado persistente es explícito, de modo que el workspace sobrevive a una ejecución sin mezclar herramientas entre proyectos.",
     "silo.date": "ago. 2026",
     "cielo.pitch":
-      "App instalable del tiempo de AEMET, publicada como ficheros estáticos.",
-    "cielo.b1":
-      "Una CLI en Rust genera la app y los datos de predicción por separado.",
+      "Una app instalable del tiempo que convierte las predicciones de AEMET en ficheros estáticos. La app y los datos de predicción se generan por separado para poder actualizarlos a distinto ritmo, y servirlos desde un bucket compatible con S3.",
     "cielo.date": "jul. 2026",
-    "grpc.pitch": "Calculadora repartida en tres servicios.",
-    "grpc.b1":
-      "UI en Svelte → HTTP en Go → gRPC en Rust, con protobuf como contrato.",
+    "grpc.pitch":
+      "Una calculadora hecha para practicar el cruce de límites entre servicios y lenguajes, no para calcular más rápido. La UI, la pasarela HTTP y el servicio de cálculo van por separado, con un contrato tipado en medio para que cada pieza pueda cambiar por su cuenta.",
     "grpc.date": "mar. 2026",
     "todone.pitch":
-      "Kanban de escritorio que guarda las tareas en el ordenador.",
-    "todone.b1":
-      "UI en React/TypeScript, backend en Rust (Tauri), SQLite — sin cuenta.",
+      "Un Kanban de escritorio local-first para que las tareas se queden en el ordenador y no haga falta una cuenta. La UI habla con un backend nativo y una base de datos en disco, lo que mantiene la app rápida y privada sin servidor.",
     "todone.date": "ene. 2026",
-    "unitowork.pitch": "Tablón de empleo para estudiantes y recién titulados.",
-    "unitowork.b1":
-      "Rust (Axum), HTMX y PostgreSQL; las ofertas se revisan antes de publicarse.",
+    "unitowork.pitch":
+      "Un tablón de empleo para estudiantes y recién titulados, centrado en ofertas de entrada que no asumen experiencia previa. El sitio se renderiza en el servidor como un único binario desplegable, y las nuevas ofertas pasan por revisión de administración antes de publicarse.",
     "unitowork.date": "jun. 2025",
     "link.docs": "Docs",
     "link.live": "Sitio",

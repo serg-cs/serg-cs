@@ -311,10 +311,7 @@
                                     <a href="https://serg-cs.github.io/silo/" data-i18n="link.docs">Docs</a>
                                 </p>
                             </div>
-                            <p class="pitch" data-i18n="silo.pitch">Per-project Linux workspaces on macOS.</p>
-                            <ul>
-                                <li data-i18n="silo.b1">A CLI runs a reusable container per repo so tools and agents share one environment.</li>
-                            </ul>
+                            <p class="pitch" data-i18n="silo.pitch">Each repo gets a stable Linux workspace on macOS so agents and tools share one environment, instead of a disposable container every session. The project stays mounted with explicit persistent state, so the workspace can outlive a single run without leaking tools across projects.</p>
                             <ul class="chips">
                                 <li class="chip">Rust</li>
                                 <li class="chip">CLI</li>
@@ -335,10 +332,7 @@
                                     <a href="https://cielo.serg-cs.com" data-i18n="link.live">Live</a>
                                 </p>
                             </div>
-                            <p class="pitch" data-i18n="cielo.pitch">Installable AEMET weather app, published as static files.</p>
-                            <ul>
-                                <li data-i18n="cielo.b1">A Rust CLI builds the app and the forecast data separately.</li>
-                            </ul>
+                            <p class="pitch" data-i18n="cielo.pitch">An installable weather app that turns AEMET forecasts into static files. App and forecast data are built separately so each can update on its own schedule, and served from an S3-compatible bucket.</p>
                             <ul class="chips">
                                 <li class="chip">Rust</li>
                                 <li class="chip">PWA</li>
@@ -358,10 +352,7 @@
                                     <a href="https://github.com/serg-cs/grpc-calculator" aria-label="grpc-calculator on GitHub">GitHub</a>
                                 </p>
                             </div>
-                            <p class="pitch" data-i18n="grpc.pitch">Calculator split across three services.</p>
-                            <ul>
-                                <li data-i18n="grpc.b1">Svelte UI → Go HTTP → Rust gRPC, with protobuf as the contract.</li>
-                            </ul>
+                            <p class="pitch" data-i18n="grpc.pitch">A calculator built to practice crossing service and language boundaries, not to compute faster. The UI, HTTP gateway, and compute service stay separate, with a typed contract in the middle so each piece can change on its own.</p>
                             <ul class="chips">
                                 <li class="chip">Svelte</li>
                                 <li class="chip">Go</li>
@@ -383,10 +374,7 @@
                                     <a href="https://github.com/serg-cs/todone" aria-label="todone on GitHub">GitHub</a>
                                 </p>
                             </div>
-                            <p class="pitch" data-i18n="todone.pitch">Desktop Kanban that stores tasks on your computer.</p>
-                            <ul>
-                                <li data-i18n="todone.b1">React/TypeScript UI, Rust (Tauri) backend, SQLite — no account.</li>
-                            </ul>
+                            <p class="pitch" data-i18n="todone.pitch">A local-first desktop Kanban so tasks stay on the machine and never need an account. The UI talks to a native backend with an on-disk database, which keeps the app fast and private without a server.</p>
                             <ul class="chips">
                                 <li class="chip">React</li>
                                 <li class="chip">TypeScript</li>
@@ -408,10 +396,7 @@
                                     <a href="https://github.com/serg-cs/unitowork" aria-label="unitowork on GitHub">GitHub</a>
                                 </p>
                             </div>
-                            <p class="pitch" data-i18n="unitowork.pitch">Job board for students and recent graduates.</p>
-                            <ul>
-                                <li data-i18n="unitowork.b1">Rust (Axum), HTMX and PostgreSQL; listings are reviewed before they go live.</li>
-                            </ul>
+                            <p class="pitch" data-i18n="unitowork.pitch">A job board for students and recent graduates, aimed at entry-level listings that do not assume prior experience. The site is server-rendered as one deployable binary, and new postings go through admin review before they are public.</p>
                             <ul class="chips">
                                 <li class="chip">Rust</li>
                                 <li class="chip">Axum</li>
