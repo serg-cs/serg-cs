@@ -180,7 +180,7 @@ section h2 {
 .about h2 { color: var(--cyan); }
 .skills h2 { color: var(--yellow); }
 .studies h2 { color: var(--purple); }
-.collab h2 { color: var(--orange); }
+.contributions h2 { color: var(--orange); }
 .projects h2 { color: var(--green); }
 
 .about p { margin: 0; }

@@ -17,7 +17,9 @@ const strings = {
     "sec.skills": "// skills",
     "skills.languages": "Programming languages",
     "skills.frameworks": "Frameworks & libraries",
-    "skills.tools": "Tools/infra",
+    "skills.databases": "Databases",
+    "skills.cloud": "Cloud infrastructure",
+    "skills.cicd": "CI/CD",
     "skills.ai": "AI tooling",
     "skills.spoken": "Spoken",
     "skills.spanish": "Spanish — native",
@@ -27,7 +29,7 @@ const strings = {
     "studies.school": "University of Málaga",
     "studies.year": "Currently 3rd year",
     "studies.electives": "Electives",
-    "sec.collab": "// collaborations",
+    "sec.contributions": "// contributions",
     "landscape.pitch":
       "Contributions to CNCF Landscape 2, the generator behind landscape.cncf.io.",
     "landscape.b1":
@@ -73,7 +75,9 @@ const strings = {
     "sec.skills": "// habilidades",
     "skills.languages": "Lenguajes de programación",
     "skills.frameworks": "Frameworks y librerías",
-    "skills.tools": "Herramientas/infra",
+    "skills.databases": "Bases de datos",
+    "skills.cloud": "Infraestructura cloud",
+    "skills.cicd": "CI/CD",
     "skills.ai": "Herramientas de IA",
     "skills.spoken": "Idiomas",
     "skills.spanish": "Español — nativo",
@@ -83,7 +87,7 @@ const strings = {
     "studies.school": "Universidad de Málaga",
     "studies.year": "Cursando 3.º",
     "studies.electives": "Optativas",
-    "sec.collab": "// colaboraciones",
+    "sec.contributions": "// contribuciones",
     "landscape.pitch":
       "Colaboraciones en CNCF Landscape 2, el generador de landscape.cncf.io.",
     "landscape.b1":
