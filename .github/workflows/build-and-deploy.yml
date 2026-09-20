@@ -1,25 +1,25 @@
-name: cv-pdf
+name: Build and deploy
 
 on:
   push:
     branches: [main]
     paths:
-      - docs/cv/index.html
-      - docs/cv/styles.css
-      - docs/cv/main.js
+      - docs/**
       - .github/cv-pdf.mjs
-      - .github/workflows/cv-pdf.yml
+      - .github/workflows/build-and-deploy.yml
   workflow_dispatch:
 
 concurrency:
-  group: cv-pdf
-  cancel-in-progress: true
+  group: pages
+  cancel-in-progress: false
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
-  pdf:
+  build:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -52,3 +52,22 @@ jobs:
           fi
           git commit -m "Update CV PDFs"
           git push origin "HEAD:${GITHUB_REF_NAME}"
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

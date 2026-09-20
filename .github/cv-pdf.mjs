@@ -52,14 +52,9 @@ try {
   });
 
   for (const lang of LANGS) {
-    await page("Page.navigate", { url: `${ORIGIN}/cv/?lang=${lang}` });
+    const nav = await page("Page.navigate", { url: `${ORIGIN}/cv/?lang=${lang}` });
+    if (nav.errorText) throw new Error(`navigate ${lang}: ${nav.errorText}`);
     await waitForReady(page, lang);
-    try {
-      await page("Runtime.evaluate", {
-        expression: "document.fonts && document.fonts.ready",
-        awaitPromise: true
-      });
-    } catch (_) { /* fonts.ready is optional */ }
     const pdfOptions = {
       printBackground: true,
       preferCSSPageSize: true,
@@ -125,6 +120,7 @@ function waitForDevTools(proc) {
     };
     const timer = setTimeout(() => finish(new Error("Chrome did not start")), 20000);
     const onData = (chunk) => {
+      process.stderr.write(chunk);
       buf += chunk;
       const match = buf.match(/DevTools listening on (ws:\/\/\S+)/);
       if (match) finish(null, match[1]);
